@@ -1,0 +1,93 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+    --fontSize: 32px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("fonts/Poppins.Bold.ttf") format ("truetype");
+    src: url("fonts/Poppins.BoldItalic.ttf") format ("truetype");
+    src: url("fonts/Poppins.ExtraBold.ttf") format ("truetype");
+    src: url("fonts/Poppins.ExtraBoldItalic.ttf") format ("truetype");
+    src: url("fonts/Poppins.Italic.ttf") format ("truetype");
+    src: url("fonts/Poppins.Regular.ttf") format ("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+hmtl {
+    box-sizing: initital;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--lightgrey);
+    font-family: Poppins, sans serif;
+    font-size: var(--fontSize);
+}
+
+.container {
+    width: 700px;
+    height: 350px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+
+    form {
+        .form-input {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid var(--Smokeygrey);
+
+            .input-item {
+               
+                text-transform: uppercase;
+                label {
+                    display:block;
+                    color: var(--Smokeygrey);
+                   font-size:17px;
+                    font-family: "Poppins",sans serif;
+                    font-weight: 700;
+                    font-style: Poppins-ExtraBoldItalic;
+                }
+
+                input {
+                    width: 155px;
+                    height: 70px;
+                    text-align: center;
+                    border-radius: 10px;
+                    font-family: "Poppins", sans serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-style: Bold Italic;
+                    border: 1px solid var(--Smokeygrey);
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
